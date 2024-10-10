@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <h1>quiz</h1>
+
+  <form action="https://formspree.io/f/meqydqlp" method="POST">
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" name="fname" placeholder="GRACE" required><br><br>
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" name="lname" placeholder="JENNY" required><br><br>
+    <label for="EMAIL">EMAIL:</label>
+    <input type="EMAIL" id="EMAIL" name="EMAIL"placeholder="123@GMAIL.COM"  required><br><br>
+    <input type="submit" value="Submit"    > 
+  </form> 
+
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz App</h1>
+    <div id="quiz"></div>
+    <div id="result" class="result"></div>
+    <button id="submit" class="button">Submit</button>
+    <button id="retry" class="button hide">Retry</button>
+    <button id="showAnswer" class="button hide">Show Answer</button>
+  </div>
+  <script src="script.js"></script>
+
+  h2>JavaScript Timing</h2>
+
+  <p>A script on this page starts this clock:</p>
+  
+  <p id="demo"></p>
+  
+  <script>
+  setInterval(myTimer, 300);
+  
+  function myTimer() {
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  }
+  </script>
+
+
+
+
+  
